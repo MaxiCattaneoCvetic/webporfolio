@@ -17,19 +17,19 @@ cursorChar: "|",
 contentType: "html",
 });
 
-try{
-	let btnNight = document.querySelector("#nightMode");
-btnNight.addEventListener(`click`, function (evento) {
-evento.preventDefault();
-let body = document.querySelector("#bod");
-body.classList.toggle("dark");
-let nvBar = document.querySelector(".navbar");
-nvBar.setAttribute("style", "border: 3px solid rgb(184, 178, 178);");
-verClase()
-});
-}catch{
-	console.log("BTN disable");
-}
+// try{
+// 	let btnNight = document.querySelector("#nightMode");
+// btnNight.addEventListener(`click`, function (evento) {
+// evento.preventDefault();
+// let body = document.querySelector("#bod");
+// body.classList.toggle("dark");
+// let nvBar = document.querySelector(".navbar");
+// nvBar.setAttribute("style", "border: 3px solid rgb(184, 178, 178);");
+// verClase()
+// });
+// }catch{
+// 	console.log("BTN disable");
+// }
 
 
 function verClase() {
@@ -238,8 +238,8 @@ btnReset.addEventListener(`click`,function(){
 
 let btnMore = document.querySelector(".btnmore")
 
-btnMore.addEventListener(`click`, function (evento) {
-	let informacion_proyectos = document.querySelector(".htmlcv")
+btnMore.addEventListener(`click`, function () {
+	let informacion_proyectos = document.querySelector(".html")
 	let booleanInfo = informacion_proyectos.classList.toggle("ab");
 	if(booleanInfo){
 		btnMore.textContent = "Cerrar"
