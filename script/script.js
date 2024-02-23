@@ -68,6 +68,7 @@ const arrProyectsJava = [
 	{ h3: "Pizzeria Factory", img: "img/pizza.png",git: "https://github.com/MaxiCattaneoCvetic/Pizzeria"},
 ];
 const arrProyectsReact = [
+	{ h3: "Dutsiland", img: "img/puesta-en-marcha.png", demo: "https://dutsiland.com/", git: "https://github.com/MaxiCattaneoCvetic"},
 	{ h3: "Wonder Ventures", img: "img/cooperacion.png", demo: "http://wonderventures3.s3-website-us-east-1.amazonaws.com/", git: "https://github.com/MaxiCattaneoCvetic/WonderVentures/tree/main"},
 	{ h3: "Safe Wallet (in progress)", img: "img/safewallet.png", demo: "https://safe-wallet-apc9r6h24-maxicattaneocvetic.vercel.app/", git: "https://safe-wallet-apc9r6h24-maxicattaneocvetic.vercel.app/"},
 	{ h3: "AEGA-Web", img: "img/cooperacion.png",demo: "https://aega-react.vercel.app/", git: "https://github.com/MaxiCattaneoCvetic/AEGA"},
