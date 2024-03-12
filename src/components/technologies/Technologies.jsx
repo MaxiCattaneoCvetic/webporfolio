@@ -54,7 +54,7 @@ const Technologies = () => {
             }}
             responsiveProps={[
               {
-                itemsToShow: 3,
+                itemsToShow: 10,
                 itemsToScroll: 0,
                 minWidth: 800,
               },
