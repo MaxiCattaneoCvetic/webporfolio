@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:content-box;
+}
+:root{
+  --colorLetters: white;
+  --colorBlackLetters: black;
+  --colorBackground: rgb(46, 45, 45);
+  --colorPrincipal: rgb(20, 109, 187);
+  --boxColor : rgb(0 119 255);
+}
+
+.decorationOff {
+  text-decoration: none;
+  color: inherit;
+}
+
+.body {
+  /* background-color: black; */
+  background-image: url("../public/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+.normalText{
+  color: var(--colorLetters);
+}
+
+.title{
+  color: white;
+  font-size: 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 13px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
