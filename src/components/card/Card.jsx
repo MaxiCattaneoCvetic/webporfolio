@@ -3,8 +3,20 @@ import { useState } from "react";
 import styles from "./card.module.css";
 import projectsData from "../../utils/projects";
 import { FcNext, FcPrevious } from "react-icons/fc";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 
 export default function Card() {
+  const [open, setOpen] = useState(false);
+  const [selectedProjectIndex, setSelectedProjectIndex] = useState(null);
+
+  const onOpenModal = (index) => {
+    setSelectedProjectIndex(index);
+    setOpen(true);
+  };
+
+  const onCloseModal = () => setOpen(false);
+
   const [currentImageIndexes, setCurrentImageIndexes] = useState(
     Array(projectsData.length).fill(0)
   );
@@ -30,7 +42,6 @@ export default function Card() {
       return updatedIndexes;
     });
   };
-
 
   return (
     <div className={styles.cardContainer}>
@@ -65,17 +76,28 @@ export default function Card() {
             <p style={{ maxHeight: "300px", overflowY: "auto" }}>
               {project.details}
             </p>
+            <p
+              style={{ textAlign: "center" }}
+              onClick={() => onOpenModal(index)}
+            >
+              leer mas
+            </p>
+            <Modal open={open && selectedProjectIndex === index} onClose={onCloseModal}>
+              <div>
+                <p key={project.id}>
+                  {project.moredetails}
+                </p>
+              </div>
+            </Modal>
           </div>
           <div className={styles.technologies}>
+            <hr />
             <p>Tecnologias:</p>
             <ul className={styles.technologyList}>
               {project.technologies.map((technology, index) => (
-                <>
-                  <li style={{ color: technology.color }} key={index}>
-                    {technology.name}
-                  </li>{" "}
-                  - {" "}
-                </>
+                <li style={{ color: technology.color }} key={index}>
+                  {technology.name}
+                </li>
               ))}
             </ul>
           </div>

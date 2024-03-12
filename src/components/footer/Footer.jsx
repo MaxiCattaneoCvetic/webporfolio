@@ -6,29 +6,15 @@ function Footer() {
     <div className={style.footerContainer}>
       <footer className={style.footer}>
         <div>
-          <p className={style.desing}>
-            © 2023 Maximiliano Cattaneo Cvetic. Todos los derechos reservados.
-          </p>
+          <p className={style.desing}>© Todos los derechos reservados.</p>
         </div>
-        <div className={style.desing2}>
-          <p>
-            Diseñado por{" "}
-            <a
-              href="https://github.com/MaxiCattaneoCvetic"
-              target="_blank"
-              rel="noopener noreferrer"
-							className={style.a}
-            >
-              Maximiliano Cattaneo Cvetic
-            </a>
-          </p>
-        </div>
+
         <div className={style.redes}>
           <a
             href="https://github.com/MaxiCattaneoCvetic"
             target="_blank"
             rel="noopener noreferrer"
-						className={style.ab}
+            className={style.ab}
           >
             <FaGithubAlt />
           </a>
@@ -36,7 +22,7 @@ function Footer() {
             href="https://www.linkedin.com/in/mcvetic/"
             target="_blank"
             rel="noopener noreferrer"
-						className={style.ab}
+            className={style.ab}
           >
             <FaLinkedinIn />
           </a>

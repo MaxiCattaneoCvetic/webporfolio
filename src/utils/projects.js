@@ -10,8 +10,14 @@ let projects = [
       "/wonder5.webp",
     ],
     title: "Wonder Ventures 🛫",
-    details:
-      "Wonder Ventures es nuestro proyecto integrador final de la carrera Certified Tech Developer de Digital House. Es una plataforma de reservas de experiencias turísticas, donde nos centramos en proporcionar una interfaz intuitiva y fácil de usar, además de la implementación de un sistema robusto de gestión de contenido que permita la fácil actualización de información sobre destinos, actividades y disponibilidad.",
+    details: `Wonder Ventures es nuestro proyecto integrador final de la carrera Certified Tech Developer de Digital House. 
+      Es una plataforma de reservas de experiencias turísticas, donde nos centramos en proporcionar una interfaz intuitiva
+      y fácil de usar, además de la implementación de un sistema robusto de gestión de contenido que permita la fácil actualización
+        de información sobre destinos, actividades y disponibilidad.`,
+    moredetails: `Wonder Ventures es nuestro proyecto integrador final de la carrera Certified Tech Developer de Digital House. 
+    Es una plataforma de reservas de experiencias turísticas, donde nos centramos en proporcionar una interfaz intuitiva
+    y fácil de usar, además de la implementación de un sistema robusto de gestión de contenido que permita la fácil actualización
+      de información sobre destinos, actividades y disponibilidad.`,
     technologies: [
       { name: "Java", color: colors[5] },
       { name: "React js", color: colors[3] },
@@ -37,8 +43,13 @@ let projects = [
       "/wonder5.webp",
     ],
     title: "Safe Wallet 💸 ",
-    details:
-      "Safe Wallet es una billetera virtual, navega con su diseño moderno por todas sus secciones, crea una cuenta y transferi dinero a tus amigos mediante un alias o un Cbu proporcionado por la app. Es una billetera virtual que te permite gestionar tus finanzas de una forma sencilla y segura. Para el desarollo de esta aplicacion se utilizo una arquitectura de microservicios, protegidos con keycloack. Con esta arquitectura, se puede gestionar la seguridad de la información de la billetera virtual, y de la billetera virtual, de forma segura.",
+    details: `Safe Wallet es una billetera virtual, navega con su diseño moderno por todas sus secciones, 
+      crea una cuenta y transferi dinero a tus amigos mediante un alias o un Cbu proporcionado por 
+      la app. Es una billetera virtual que te permite gestionar tus finanzas de una forma sencilla 
+      y segura. Para el desarollo de esta aplicacion se utilizo una arquitectura de microservicios, 
+      protegidos con keycloack. Con esta arquitectura, se puede gestionar la seguridad de la información
+      de la billetera virtual, y de la billetera virtual, de forma segura.`,
+    moredetails: ``,
     technologies: [
       { name: "Java", color: colors[5] },
       { name: "React js", color: colors[3] },
@@ -58,7 +69,14 @@ let projects = [
     id: 3,
     image: ["/odontoMax.gif"],
     title: "Odonto Max 🦷",
-    details: `Odonto Maxi, mi proyecto final de Backend I, el cual tiene como objetivo atender las necesidades de una clínica odontológica mediante el registro de odontólogos y pacientes, y la gestión de turnos. El proyecto se desarrolló con Spring Boot y se utilizó Spring Starter Web, también la creación de API REST que permitiera la comunicación eficiente y segura entre diferentes aplicaciones y sistemas. Además, para garantizar la seguridad de la API, se implementó la autenticación y autorización mediante Spring Security. También se utilizó Log4j y H2 como base de datos. Se realizaron pruebas unitarias y de integración utilizando JUnit.`,
+    details: `Odonto Maxi, mi proyecto final de Backend I, el cual tiene como objetivo atender 
+    las necesidades de una clínica odontológica mediante el registro de odontólogos y pacient
+    es, y la gestión de turnos. El proyecto se desarrolló con Spring Boot y se utilizó Spring
+      Starter Web, también la creación de API REST que permitiera la comunicación eficiente y 
+      segura entre diferentes aplicaciones y sistemas. Además, para garantizar la seguridad de la API, se implementó 
+      la autenticación y autorización mediante Spring Security. También se utilizó Log4j y H2 como base de datos. 
+      Se realizaron pruebas unitarias y de integración utilizando JUnit.`,
+    moredetails: ``,
     technologies: [
       { name: "Java", color: colors[5] },
       { name: "React js", color: colors[3] },
@@ -82,8 +100,10 @@ let projects = [
     id: 4,
     image: ["/odonto1.png", "/odonto2.png", "/odonto3.jpg"],
     title: "OdontoSolutions",
-    details:
-      "Odonto Solutions surgió como examen final de frontend de mi carrera de Certified Tech Developer. Es una plataforma diseñada para la gestión integral de consultorios odontológicos. Además, me brindó la oportunidad de mejorar mis habilidades de trabajo en equipo y comunicación.",
+    details: `Odonto Solutions surgió como examen final de frontend de mi carrera de Certified Tech Developer.
+       Es una plataforma diseñada para la gestión integral de consultorios odontológicos. Además, 
+       me brindó la oportunidad de mejorar mis habilidades de trabajo en equipo y comunicación.`,
+    moredetails: ``,
     technologies: [{ name: "React js", color: colors[5] }],
     url: [
       {
@@ -97,8 +117,12 @@ let projects = [
     id: 5,
     image: ["/tiro1.jpg", "/tiro2.jpg"],
     title: "Tiro al blanco 🔫",
-    details:
-      "Tiro al blanco es un emocionante proyecto creado como parte del curso de Alura. Te invito a sumergirte en esta experiencia única. Simplemente ingresa con tu nombre y adéntrate en la diversión de apuntar y disparar para acertar en el blanco. Con cada acierto, podrás incrementar tu puntuación y desafiar tus habilidades de puntería. ¡Prepárate para una experiencia llena de emoción y competencia mientras trabajas para mejorar tu precisión y alcanzar la máxima puntuación!",
+    details: `Tiro al blanco es un emocionante proyecto creado como parte del curso de Alura. 
+      Te invito a sumergirte en esta experiencia única. Simplemente ingresa con tu nombre y adéntrate
+       en la diversión de apuntar y disparar para acertar en el blanco. Con cada acierto, podrás incrementar tu
+        puntuación y desafiar tus habilidades de puntería. ¡Prepárate para una experiencia llena de emoción y competencia
+         mientras trabajas para mejorar tu precisión y alcanzar la máxima puntuación!`,
+    moredetails: ``,
     technologies: [
       { name: "JavaScript", color: colors[5] },
       { name: "HTML", color: colors[0] },
@@ -120,6 +144,7 @@ let projects = [
     los cuales representan el resultado de mi esfuerzo y dedicación 
     en el estudio. Te invito a visitar mi perfil 
     de GitHub para explorar más de mis trabajos y habilidades. ¡Gracias por tomarte el tiempo de revisar mi portafolio!`,
+    moredetails:``,
     technologies: [
       { name: "React js", color: colors[3] },
       { name: "HTML", color: colors[0] },
