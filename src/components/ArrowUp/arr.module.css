@@ -1,0 +1,14 @@
+.arrContainer {
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+}
+
+.arr {
+	background-color: none;
+	border: 2px solid var(--colorPrincipal);
+	cursor: pointer;
+	padding: 0.5rem;
+	color: white;
+	border-radius: 2rem;
+}

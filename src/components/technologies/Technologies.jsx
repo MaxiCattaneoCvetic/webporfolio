@@ -22,6 +22,8 @@ const Technologies = () => {
 
   return (
     <>
+    <br/>
+    <br/>
     <h2 className={styles.titlex}>Tecnologias:</h2>
       <div className={styles.tecnoMainContainer}>
         <div className={styles.container}>
@@ -132,6 +134,8 @@ const Technologies = () => {
           </ReactSimplyCarousel>
         </div>
       </div>
+      <br/>
+    <br/>
     </>
   );
 };

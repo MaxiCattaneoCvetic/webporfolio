@@ -11,27 +11,31 @@ function NavBar() {
     <>
       <nav className={style.nav}>
         <FaCode style={{ fontSize: "2rem", color: "blue" }} />
-        <div  className={style.hamburger_div}>
+        <div
+          className={style.hamburger_div}
+          style={{ color: "white !important" }}
+        >
           <Hamburger
             toggled={isMenuOpen}
             toggle={setIsMenuOpen}
             color="white"
             easing="ease-in"
+            style={{ color: "white !important" }}
           />
         </div>
         <ul className={`${style.ulNavbar} ${isMenuOpen ? style.open : ""}`}>
           <li>
-            <a className="decorationOff" href="/">
+            <a className="decorationOff" onClick={()=>{setIsMenuOpen(false)}} href="/">
               Home
             </a>
           </li>
           <li>
-            <a className="decorationOff" href="#proyect">
+            <a className="decorationOff" onClick={()=>{setIsMenuOpen(false)}} href="#proyect">
               Proyects
             </a>
           </li>
           <li>
-            <a className="decorationOff" href="#skills">
+            <a className="decorationOff" onClick={()=>{setIsMenuOpen(false)}} href="#skills">
               Skills
             </a>
           </li>
@@ -41,8 +45,13 @@ function NavBar() {
             </a>
           </li>
           <li>
-            <a className="decorationOff" href="https://dutsiland.com" target="_blank" rel="noreferrer" >
-            ~ Dutsiland ~
+            <a
+              className="decorationOff"
+              href="https://dutsiland.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ~ Dutsiland ~
             </a>
           </li>
         </ul>

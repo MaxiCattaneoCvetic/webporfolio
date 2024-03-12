@@ -5,6 +5,7 @@ import Presentation from "../../components/presentation/Presentation.jsx";
 import Projects from "../../components/projects/Projects.jsx";
 import Technologies from "../../components/technologies/Technologies.jsx";
 import Footer from "../../components/footer/Footer.jsx";
+import ArrowUp from "../../components/ArrowUp/ArrowUp.jsx";
 
 export default function Home() {
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function Home() {
     <>
       <section>
         <NavBar />
+        <ArrowUp/>
         <Presentation />
         <Projects />
         <Technologies />
