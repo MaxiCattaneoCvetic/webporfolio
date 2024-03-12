@@ -86,7 +86,7 @@ function Form() {
             value={formData.email}
             onChange={handleInputChange}
             className={style.input}
-            placeholder="Correo electronico"
+            placeholder="Correo electrónico"
             required
           />
         </div>
@@ -98,7 +98,7 @@ function Form() {
           value={formData.message}
           onChange={handleInputChange}
           className={style.inputTextarea}
-          placeholder="¿Con que comenzamos?"
+          placeholder="¿Con qué comenzamos?"
         />
 
         <button
