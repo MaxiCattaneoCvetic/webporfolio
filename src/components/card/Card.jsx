@@ -77,22 +77,24 @@ export default function Card() {
               {project.details}
             </p>
             <p
-              style={{ textAlign: "center" }}
+              style={{ textAlign: "center", cursor: "pointer", color: "blue" }}
               onClick={() => onOpenModal(index)}
             >
-              leer mas
+              leer mas..
             </p>
-            <Modal open={open && selectedProjectIndex === index} onClose={onCloseModal}>
+            <Modal  center styles={{ modal: { borderRadius: "10px" } }} open={open && selectedProjectIndex === index} onClose={onCloseModal}>
               <div>
                 <p key={project.id}>
+                  <h2 style={{ textAlign: "center" }}>{project.title}</h2>
                   {project.moredetails}
                 </p>
               </div>
             </Modal>
           </div>
           <div className={styles.technologies}>
+            <br/>
             <hr />
-            <p>Tecnologias:</p>
+            <p style={{ padding: "10px" }}>Tecnologias:</p>
             <ul className={styles.technologyList}>
               {project.technologies.map((technology, index) => (
                 <li style={{ color: technology.color }} key={index}>
