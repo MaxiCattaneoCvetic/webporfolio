@@ -3,10 +3,10 @@ import style from "./footer.module.css";
 
 function Footer() {
   return (
-    <div>
+    <div className={style.footerContainer}>
       <footer className={style.footer}>
         <div>
-          <p>
+          <p className={style.desing}>
             © 2023 Maximiliano Cattaneo Cvetic. Todos los derechos reservados.
           </p>
         </div>
