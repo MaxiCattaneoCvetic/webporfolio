@@ -22,7 +22,11 @@ function Presentation() {
           className={style.typedText}
         />
         <div className={style.cvContainer}>
-          <a href=""  download="../../cv/Maximiliano Cattaneo Cvetic.Cv.pdf" className={style.cv}>
+          <a
+            href="../../cv/Maximiliano Cattaneo Cvetic.Cv.pdf"
+            download="Maximiliano_Cattaneo_Cvetic_CV.pdf"
+            className={style.cv}
+          >
             Descargar Cv{" "}
           </a>
           <MdOutlineFileDownload style={{ color: "white" }} />
