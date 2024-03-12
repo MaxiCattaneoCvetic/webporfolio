@@ -10,7 +10,7 @@ function Footer() {
             © 2023 Maximiliano Cattaneo Cvetic. Todos los derechos reservados.
           </p>
         </div>
-        <div>
+        <div className={style.desing2}>
           <p>
             Diseñado por{" "}
             <a
