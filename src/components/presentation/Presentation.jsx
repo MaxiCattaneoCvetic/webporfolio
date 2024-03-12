@@ -6,7 +6,7 @@ function Presentation() {
   return (
     <section className={style.presentationContainer}>
       <div className={style.imgPresentationContainer}>
-        <img src="../../../public/presentationLogo.png" alt="" />
+        <img src="/presentationLogo.png" alt="" />
       </div>
       <div className={style.textContainerPresentation}>
         <h2 className={style.hola}>Hola!</h2>
