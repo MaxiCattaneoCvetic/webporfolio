@@ -24,7 +24,7 @@ const Technologies = () => {
     <>
     <br/>
     <br/>
-    <h2 className={styles.titlex}>Tecnologias:</h2>
+    <h2 className={styles.titlex} id="skills">Tecnologias:</h2>
       <div className={styles.tecnoMainContainer}>
         <div className={styles.container}>
           <ReactSimplyCarousel

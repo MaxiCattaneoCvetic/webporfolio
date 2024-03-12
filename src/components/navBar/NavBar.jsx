@@ -7,6 +7,7 @@ import "../../generalcss.css";
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
   return (
     <>
       <nav className={style.nav}>
@@ -25,17 +26,36 @@ function NavBar() {
         </div>
         <ul className={`${style.ulNavbar} ${isMenuOpen ? style.open : ""}`}>
           <li>
-            <a className="decorationOff" onClick={()=>{setIsMenuOpen(false)}} href="/">
+            <a
+              className="decorationOff"
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
+              href="/"
+            >
               Home
             </a>
           </li>
           <li>
-            <a className="decorationOff" onClick={()=>{setIsMenuOpen(false)}} href="#proyect">
+            <a
+              className="decorationOff"
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
+              href="#proyect"
+            >
               Proyects
             </a>
           </li>
           <li>
-            <a className="decorationOff" onClick={()=>{setIsMenuOpen(false)}} href="#skills">
+            <a
+              className="decorationOff"
+              onClick={() => {
+                setIsMenuOpen(false);
+
+              }}
+              href="#skills"
+            >
               Skills
             </a>
           </li>

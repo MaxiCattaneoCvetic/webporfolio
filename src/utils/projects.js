@@ -71,7 +71,7 @@ let projects = [
     id: 3,
     image: ["/odontoMax.gif"],
     title: "Odonto Max 🦷",
-    details: `Odonto Maxi, mi proyecto final de Backend I, el cual tiene como objetivo atender 
+    details: `Odonto Max, mi proyecto final de Backend I, el cual tiene como objetivo atender 
     las necesidades de una clínica odontológica mediante el registro de odontólogos y pacientes y la gestión de turnos`,
     moredetails: `El proyecto se desarrolló con Spring Boot y se utilizó Spring Starter Web, 
     también la creación de API REST que permitiera la comunicación eficiente y segura entre diferentes
@@ -115,6 +115,7 @@ let projects = [
         codigo:
           "https://github.com/MaxiCattaneoCvetic/OdontoSolutions/tree/93e61b0772ff2413e8ceedfd6c1206cbb6729777",
         deploy: "https://odonto-mu.vercel.app/",
+        isReady:true
       },
     ],
   },
@@ -146,7 +147,7 @@ let projects = [
   },
   {
     id: 6,
-    image: ["/porfolio1.jpg", "/porfolio1.jpg"],
+    image: ["/porfolio1.jpg", "/porfolio2.jpg", "/porfolio3.jpg"],
     title: "Portafolio 🚀",
     details: `En mi portafolio encontrarás una muestra de mis proyectos, 
     los cuales representan el resultado de mi esfuerzo y dedicación 
