@@ -6,6 +6,12 @@ import { useState } from "react";
 
 function Presentation() {
   const [isDownload, setIsDownload] = useState(false);
+
+  const handleDownload = () => {
+    setIsDownload(true);
+    
+  };
+
   return (
     <section className={style.presentationContainer}>
       <div className={style.imgPresentationContainer}>
@@ -26,42 +32,35 @@ function Presentation() {
         />
         <div className={style.cvContainer}>
           <a
-            href="../../cv/Maximiliano Cattaneo Cvetic.Cv.pdf"
+            href="/Maximiliano_Cattaneo_Cvetic_CV.pdf" 
             download="Maximiliano_Cattaneo_Cvetic_CV.pdf"
             className={style.cv}
+            style={{ textDecoration: "underline var(--colorPrincipal)"}}
+            onClick={handleDownload} 
           >
-            Descargar CV{" "}
+            Descargar CV
           </a>
-          <a
-            href="../../cv/Maximiliano Cattaneo Cvetic.Cv.pdf"
-            download="Maximiliano_Cattaneo_Cvetic_CV.pdf"
-            className={style.cv}
-          >
-            {isDownload ? (
-              <MdDownloadDone
-                download="Maximiliano_Cattaneo_Cvetic_CV.pdf"
-                style={{
-                  color: "white",
-                  cursor: "pointer",
-                  border: "2px solid var(--colorPrincipal)",
-                  padding: "5px",
-                  borderRadius: "5px",
-                }}
-              />
-            ) : (
-              <MdOutlineFileDownload
-                download="Maximiliano_Cattaneo_Cvetic_CV.pdf"
-                onClick={() => setIsDownload(true)}
-                style={{
-                  color: "white",
-                  cursor: "pointer",
-                  border: "2px solid var(--colorPrincipal)",
-                  padding: "5px",
-                  borderRadius: "5px",
-                }}
-              />
-            )}
-          </a>
+          {isDownload ? (
+            <MdDownloadDone
+              style={{
+                color: "white",
+                cursor: "pointer",
+                border: "2px solid var(--colorPrincipal)",
+                padding: "5px",
+                borderRadius: "5px",
+              }}
+            />
+          ) : (
+            <MdOutlineFileDownload
+              style={{
+                color: "white",
+                cursor: "pointer",
+                border: "2px solid var(--colorPrincipal)",
+                padding: "5px",
+                borderRadius: "5px",
+              }}
+            />
+          )}
         </div>
       </div>
     </section>
