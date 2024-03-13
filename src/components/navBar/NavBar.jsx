@@ -33,7 +33,7 @@ function NavBar() {
               }}
               href="/"
             >
-              Home
+              Inicio
             </a>
           </li>
           <li>
@@ -44,7 +44,7 @@ function NavBar() {
               }}
               href="#proyect"
             >
-              Proyects
+              Proyectos
             </a>
           </li>
           <li>
@@ -56,12 +56,12 @@ function NavBar() {
               }}
               href="#skills"
             >
-              Skills
+              Tecnologias
             </a>
           </li>
           <li>
             <a className="decorationOff" href="#contact">
-              Contact
+              Contacto
             </a>
           </li>
           <li>
