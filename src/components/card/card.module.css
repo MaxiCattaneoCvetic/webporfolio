@@ -28,6 +28,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 2rem;
 
 }
 
@@ -131,8 +132,8 @@
 
 @media (max-width: 400px) {
   .card {
-    max-width: 300px;
-    width: 300px;
+    max-width: 316px;
+    width: 305px;
     height: 700px;
     max-height: 700px;
     padding: 0;
@@ -146,5 +147,8 @@
 
   .cardContainer {
     gap: 10px;
+  }
+  .imageContainer{
+    width: 94%;
   }
 }

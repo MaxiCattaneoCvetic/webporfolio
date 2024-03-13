@@ -51,7 +51,7 @@ export default function Card() {
             <img
               src={project.image[currentImageIndexes[index]]}
               alt={project.title}
-              style={{ width: "500px", height: "auto" }}
+              style={{ width: "600px", height: "auto" }}
               className={styles.projectImage}
             />
             <div className={styles.imageButtons}>
@@ -73,7 +73,7 @@ export default function Card() {
           </div>
           <h3 className={styles.projectTitle}>{project.title}</h3>
           <div className={styles.projectDetails}>
-            <p style={{ maxHeight: "300px", overflowY: "auto" }}>
+            <p style={{ maxHeight: "300px", overflowY: "auto",padding: "12px" }}>
               {project.details}
             </p>
             <p
