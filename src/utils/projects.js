@@ -123,9 +123,8 @@ let projects = [
     image: ["/odonto1.png", "/odonto2.png", "/odonto3.jpg"],
     title: "OdontoSolutions 🦷",
     details: `Odonto Solutions surgió como examen final de frontend de mi carrera de Certified Tech Developer.
-        Es una plataforma diseñada para la gestión integral de consultorios odontológicos. Además, 
-        me brindó la oportunidad de mejorar mis habilidades de trabajo en equipo y comunicación.`,
-    moredetails: `Fue uno de los primeros proyectos que realice, busca entender el funcionamiento de LocalStorage y 
+        Es una plataforma diseñada para la gestión integral de consultorios odontológicos.`,
+    moredetails: `Me brindó la oportunidad de mejorar mis habilidades de trabajo en equipo y comunicación.Fue uno de los primeros proyectos que realice, busca entender el funcionamiento de LocalStorage y 
     sesionStorage y la utilización de variables de estado para almacenar información.`,
     technologies: [{ name: "React js", color: colors[5] }],
     url: [
