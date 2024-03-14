@@ -3,13 +3,13 @@ import { ReactTyped } from "react-typed";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { MdDownloadDone } from "react-icons/md";
 import { useState } from "react";
+import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
 
 function Presentation() {
   const [isDownload, setIsDownload] = useState(false);
 
   const handleDownload = () => {
     setIsDownload(true);
-    
   };
 
   return (
@@ -32,11 +32,11 @@ function Presentation() {
         />
         <div className={style.cvContainer}>
           <a
-            href="/Maximiliano_Cattaneo_Cvetic_CV.pdf" 
+            href="/Maximiliano_Cattaneo_Cvetic_CV.pdf"
             download="Maximiliano_Cattaneo_Cvetic_CV.pdf"
             className={style.cv}
-            style={{ textDecoration: "underline var(--colorPrincipal)"}}
-            onClick={handleDownload} 
+            style={{ textDecoration: "underline var(--colorPrincipal)" }}
+            onClick={handleDownload}
           >
             Descargar CV
           </a>
@@ -61,6 +61,24 @@ function Presentation() {
               }}
             />
           )}
+        </div>
+        <div className={style.redes}>
+          <a
+            href="https://github.com/MaxiCattaneoCvetic"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={style.ab}
+          >
+            <FaGithubAlt />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mcvetic/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={style.ab}
+          >
+            <FaLinkedinIn />
+          </a>
         </div>
       </div>
     </section>

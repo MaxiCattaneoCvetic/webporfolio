@@ -7,7 +7,6 @@ import "../../generalcss.css";
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
   return (
     <>
       <nav className={style.nav}>
@@ -52,7 +51,6 @@ function NavBar() {
               className="decorationOff"
               onClick={() => {
                 setIsMenuOpen(false);
-
               }}
               href="#skills"
             >
@@ -60,7 +58,13 @@ function NavBar() {
             </a>
           </li>
           <li>
-            <a className="decorationOff" href="#contact">
+            <a
+              className="decorationOff"
+              href="#contact"
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
+            >
               Contacto
             </a>
           </li>
@@ -70,13 +74,15 @@ function NavBar() {
               href="https://dutsiland.com"
               target="_blank"
               rel="noreferrer"
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
             >
               ~ Dutsiland ~
             </a>
           </li>
         </ul>
       </nav>
-     
     </>
   );
 }
