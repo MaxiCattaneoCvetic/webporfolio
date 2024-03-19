@@ -86,7 +86,7 @@ let projects = [
     url: [
       {
         codigo:
-          "https://www.linkedin.com/feed/update/urn:li:activity:7051660449469054976/",
+          "https://github.com/MaxiCattaneoCvetic/ClinicaDentalS",
         deploy:
           "https://www.linkedin.com/feed/update/urn:li:activity:7051660449469054976/",
         isReady: true,
