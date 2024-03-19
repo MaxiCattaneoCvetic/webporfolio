@@ -93,7 +93,7 @@ function Form() {
             />
           </div>
           <label htmlFor="message">Comentarios</label>
-          <input
+          <textarea
             type="textarea"
             id="message"
             name="message"
