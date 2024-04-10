@@ -7,6 +7,7 @@ import Technologies from "../../components/technologies/Technologies.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 import ArrowUp from "../../components/ArrowUp/ArrowUp.jsx";
 
+
 export default function Home() {
   useEffect(() => {
     console.log(
@@ -14,16 +15,18 @@ export default function Home() {
     );
   }, []);
 
+
   return (
     <>
       <section>
         <NavBar />
-        <ArrowUp/>
+        <ArrowUp />
+
         <Presentation />
         <Projects />
         <Technologies />
         <Form />
-        <Footer/>
+        <Footer />
       </section>
     </>
   );

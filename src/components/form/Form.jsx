@@ -5,6 +5,7 @@ import { useForm } from "@formspree/react";
 import sendForm from "../../utils/sendForm";
 
 function Form() {
+  const [error, setError] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,12 +26,15 @@ function Form() {
     });
   };
 
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
   function handleSubmit() {
     const message =
       "¡Muchas gracias por contactar conmigo " +
       `<strong>${formData.name}</strong>` +
       "! En breve te contactaré para brindarte más información.";
-
     if (
       formData.name === "" ||
       formData.email === "" ||
@@ -42,13 +46,18 @@ function Form() {
         text: "Todos los campos son obligatorios.",
       });
       return;
+    } else if (!isValidEmail(formData.email)) {
+      setError(true);
+      return;
+    } else {
+      setError(false);
     }
     try {
       sendForm(formData);
       Swal.fire({
         icon: "success",
         title: "¡Mensaje enviado!",
-        html: message, // Cambiado a 'html' para permitir el uso de etiquetas HTML
+        html: message,
       }).then(() => {
         setFormData(initialState);
       });
@@ -62,11 +71,19 @@ function Form() {
     }
   }
 
-  return (    
+  return (
     <>
-      <h2 style={{textAlign:"center", color:"white",textDecoration:"underline rgba(0, 0, 255, 0.425)"}}>Contacto</h2>
+      <h2
+        style={{
+          textAlign: "center",
+          color: "white",
+          textDecoration: "underline rgba(0, 0, 255, 0.425)",
+        }}
+      >
+        Contacto
+      </h2>
       <div className={style.containerForm} id="contact">
-        <form onSubmit={handleSubmit} className={style.form}>
+        <form className={style.form}>
           <div className={style.inputContainer}>
             <label htmlFor="name">Nombre:</label>
             <input
@@ -80,7 +97,7 @@ function Form() {
               placeholder="¿Cuál es tu nombre?"
             />
 
-            <label htmlFor="email">Correo Electronico:</label>
+            <label htmlFor="email">Correo Electrónico:</label>
             <input
               type="email"
               id="email"
@@ -92,19 +109,27 @@ function Form() {
               required
             />
           </div>
+          <div>
+          {error ? (
+            <p style={{ color: "red", fontSize: "15px" }}>
+              Ingresa un correo válido
+            </p>
+          ) : null}
+          </div>
           <label htmlFor="message">Comentarios</label>
           <textarea
-            type="textarea"
             id="message"
             name="message"
             value={formData.message}
             onChange={handleInputChange}
             className={style.inputTextarea}
             placeholder="¿Con qué comenzamos?"
+            required
           />
 
           <button
             className={style.btn}
+            type="submit"
             onClick={(e) => {
               e.preventDefault();
               handleSubmit();
