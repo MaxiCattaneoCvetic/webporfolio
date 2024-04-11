@@ -52,11 +52,12 @@ let projects = [
       { name: "MongoDB", color: colors[2] },
       { name: "AWS", color: colors[5] },
       { name: "Keycloak", color: colors[5] },
+      { name: "Docker", color: colors[3] },
     ],
     url: [
       {
         codigo: "https://github.com/MaxiCattaneoCvetic/WonderVentures",
-        deploy: "https://wonderventures.vercel.app/",
+        deploy: "https://safewallet-teal.vercel.app/",
         isReady: false,
       },
     ],
