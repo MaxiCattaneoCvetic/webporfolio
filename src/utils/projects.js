@@ -58,7 +58,7 @@ let projects = [
       {
         codigo: "https://github.com/MaxiCattaneoCvetic/safeWallet",
         deploy: "https://safewallet-sooty.vercel.app/",
-        isReady: false,
+        isReady: true,
       },
     ],
   },
