@@ -35,7 +35,7 @@ let projects = [
 
   {
     id: 2,
-    image: ["/safewallet1.jpg", "/safewallet2.jpg", "/safewallet3.jpg"],
+    image: ["/safewallet1.jpg", "/safewallet2.jpg", "/safewallet3.jpg","/safewallet4.jpg","/safewallet5.jpg",],
     title: "Safe Wallet 💸 ",
     details: `Safe Wallet es una billetera virtual y es mi proyecto final de la especializacion en Backend,
       crea una cuenta y transferi dinero a tus amigos mediante un alias o un Cbu proporcionado por 
