@@ -73,7 +73,9 @@ export default function Card() {
           </div>
           <h3 className={styles.projectTitle}>{project.title}</h3>
           <div className={styles.projectDetails}>
-            <p style={{ maxHeight: "300px", overflowY: "auto",padding: "12px" }}>
+            <p
+              style={{ maxHeight: "300px", overflowY: "auto", padding: "12px" }}
+            >
               {project.details}
             </p>
             <p
@@ -82,7 +84,12 @@ export default function Card() {
             >
               leer mas..
             </p>
-            <Modal  center styles={{ modal: { borderRadius: "10px" } }} open={open && selectedProjectIndex === index} onClose={onCloseModal}>
+            <Modal
+              center
+              styles={{ modal: { borderRadius: "10px" } }}
+              open={open && selectedProjectIndex === index}
+              onClose={onCloseModal}
+            >
               <div>
                 <p key={project.id}>
                   <h2 style={{ textAlign: "center" }}>{project.title}</h2>
@@ -92,7 +99,7 @@ export default function Card() {
             </Modal>
           </div>
           <div className={styles.technologies}>
-            <br/>
+            <br />
             <hr />
             <p style={{ padding: "10px" }}>Tecnologias:</p>
             <ul className={styles.technologyList}>
@@ -104,26 +111,46 @@ export default function Card() {
             </ul>
           </div>
           {project.url[0].isReady ? (
-            <div className={styles.buttons}>
-              <button className={styles.viewButton}>
-                <a
-                  target="_blank"
-                  style={{ textDecoration: "none", color: "white" }}
-                  href={project.url[0].deploy}
-                >
-                  Ver
-                </a>{" "}
-              </button>
-              <button className={styles.codeButton}>
-                <a
-                  target="_blank"
-                  style={{ textDecoration: "none", color: "white" }}
-                  href={project.url[0].codigo}
-                >
-                  Código
-                </a>
-              </button>
-            </div>
+            <>
+              <div className={styles.buttons}>
+                <button className={styles.viewButton}>
+                  <a
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "white" }}
+                    href={project.url[0].deploy}
+                  >
+                    Ver
+                  </a>{" "}
+                </button>
+                <button className={styles.codeButton}>
+                  <a
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "white" }}
+                    href={project.url[0].codigo}
+                  >
+                    Código
+                  </a>
+                </button>
+              </div>
+              <div>
+                {project.url[0].isVideo ? (
+                  <button
+                    className={styles.viewButton}
+                    style={{ padding: "10px", background: "red" }}
+                  >
+                    <a
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "white" }}
+                      href={project.url[0].video}
+                    >
+                      Ver video de yotube
+                    </a>{" "}
+                  </button>
+                ) : (
+                  ""
+                )}
+              </div>
+            </>
           ) : (
             <button disabled={true} className={styles.viewButton}>
               <a

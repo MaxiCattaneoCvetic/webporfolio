@@ -1,6 +1,43 @@
 let colors = ["red", "blue", "green", "yellow", "purple", "orange", "grey"];
 let projects = [
   {
+    id: 2,
+    image: [
+      "/safewallet1.jpg",
+      "/safewallet2.jpg",
+      "/safewallet3.jpg",
+      "/safewallet4.png",
+      "/safewallet5.png",
+    ],
+    title: "Safe Wallet 💸 ",
+    details: `Safe Wallet es una billetera virtual y es mi proyecto final de la especializacion en Backend,
+      crea una cuenta y transferi dinero a tus amigos mediante un alias o un Cbu proporcionado por 
+      la app.`,
+    moredetails: `Es una billetera virtual que te permite gestionar tus finanzas de una forma sencilla 
+    y segura. Para el desarollo de esta aplicacion se utilizo una arquitectura de microservicios, 
+    protegidos con keycloack. Con esta arquitectura, se puede gestionar la seguridad de la información
+    de la billetera virtual. Cada transacción genera un historial personalizado por cada usuario, el cual se puede consultar para
+    tener control de las transferencias realizadsa y recibidas, estas tambien pueden descargarse en formato PDF para poder compartirlas
+    con tus amigos.`,
+    technologies: [
+      { name: "Java", color: colors[5] },
+      { name: "React js", color: colors[3] },
+      { name: "MongoDB", color: colors[2] },
+      { name: "AWS", color: colors[5] },
+      { name: "Keycloak", color: colors[5] },
+      { name: "Docker", color: colors[3] },
+    ],
+    url: [
+      {
+        codigo: "https://github.com/MaxiCattaneoCvetic/safeWallet",
+        deploy: "https://safewallet-sooty.vercel.app/",
+        video: "https://www.youtube.com/watch?v=LOh_LhYaQrc&ab_channel=Maxi",
+        isReady: true,
+        isVideo: true,
+      },
+    ],
+  },
+  {
     id: 1,
     image: [
       "/wonder1.webp",
@@ -29,41 +66,11 @@ let projects = [
         codigo: "https://github.com/MaxiCattaneoCvetic/WonderVentures",
         deploy: "http://wonderventures3.s3-website-us-east-1.amazonaws.com/",
         isReady: true,
-        isVideo:true,
-      },
-    ],
-  },
-
-  {
-    id: 2,
-    image: ["/safewallet1.jpg", "/safewallet2.jpg", "/safewallet3.jpg","/safewallet4.png","/safewallet5.png",],
-    title: "Safe Wallet 💸 ",
-    details: `Safe Wallet es una billetera virtual y es mi proyecto final de la especializacion en Backend,
-      crea una cuenta y transferi dinero a tus amigos mediante un alias o un Cbu proporcionado por 
-      la app.`,
-    moredetails: `Es una billetera virtual que te permite gestionar tus finanzas de una forma sencilla 
-    y segura. Para el desarollo de esta aplicacion se utilizo una arquitectura de microservicios, 
-    protegidos con keycloack. Con esta arquitectura, se puede gestionar la seguridad de la información
-    de la billetera virtual. Cada transacción genera un historial personalizado por cada usuario, el cual se puede consultar para
-    tener control de las transferencias realizadsa y recibidas, estas tambien pueden descargarse en formato PDF para poder compartirlas
-    con tus amigos.`,
-    technologies: [
-      { name: "Java", color: colors[5] },
-      { name: "React js", color: colors[3] },
-      { name: "MongoDB", color: colors[2] },
-      { name: "AWS", color: colors[5] },
-      { name: "Keycloak", color: colors[5] },
-      { name: "Docker", color: colors[3] },
-    ],
-    url: [
-      {
-        codigo: "https://github.com/MaxiCattaneoCvetic/safeWallet",
-        deploy: "https://safewallet-sooty.vercel.app/",
-        isReady: true,
         isVideo: false,
       },
     ],
   },
+
   {
     id: 3,
     image: ["/odontoMax.gif"],
@@ -88,8 +95,7 @@ let projects = [
     ],
     url: [
       {
-        codigo:
-          "https://github.com/MaxiCattaneoCvetic/ClinicaDentalS",
+        codigo: "https://github.com/MaxiCattaneoCvetic/ClinicaDentalS",
         deploy:
           "https://www.linkedin.com/feed/update/urn:li:activity:7051660449469054976/",
         isReady: true,
