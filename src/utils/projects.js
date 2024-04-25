@@ -137,32 +137,6 @@ let projects = [
       },
     ],
   },
-  {
-    id: 6,
-    image: ["/tiro1.jpg", "/tiro2.jpg"],
-    title: "Tiro al blanco 🔫",
-    details: `Tiro al blanco es un emocionante proyecto creado como parte del curso de Alura.
-    En donde el objetivo es darle al blanco para sumar puntos.`,
-    moredetails: ` 
-    Te invito a sumergirte en esta experiencia única. Simplemente ingresa con tu nombre y adéntrate
-     en la diversión de apuntar y disparar para acertar en el blanco. Con cada acierto, podrás incrementar tu
-      puntuación y desafiar tus habilidades de puntería. ¡Prepárate para una experiencia llena de emoción y competencia
-       mientras trabajas para mejorar tu precisión y alcanzar la máxima puntuación! En este proyecto vimos como manejar un Canvas
-       en un entorno web y variables que van actualizandose para la puntuacion y la movilidad del blanco. Sin dudas un proyecto divertido
-       y desafiante ya que no es lo que acostumbro hacer.`,
-    technologies: [
-      { name: "JavaScript", color: colors[5] },
-      { name: "HTML", color: colors[0] },
-      { name: "CSS", color: colors[1] },
-    ],
-    url: [
-      {
-        codigo: "https://github.com/MaxiCattaneoCvetic/TiroAlBlanco",
-        deploy: "https://maxicattaneocvetic.github.io/TiroAlBlanco/",
-        isReady: true,
-      },
-    ],
-  },
 ];
 
 export default projects;
