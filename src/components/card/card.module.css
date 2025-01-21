@@ -19,6 +19,20 @@
   border: 1px solid rgba(0, 0, 255, 0.299);
  
 }
+.getMoreInfo{ 
+  text-align: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.466);
+
+}
+.getMoreInfo:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: underline blue;
+
+
+
+
+}
 
 .imageContainer {
   position: relative;

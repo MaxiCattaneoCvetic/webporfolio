@@ -79,24 +79,56 @@ export default function Card() {
               {project.details}
             </p>
             <p
-              style={{ textAlign: "center", cursor: "pointer", color: "blue" }}
+              className={styles.getMoreInfo}
               onClick={() => onOpenModal(index)}
             >
-              leer mas..
+              Me gustaria saber mas sobre este proyecto...
             </p>
             <Modal
               center
-              styles={{ modal: { borderRadius: "10px" } }}
+              styles={{
+                modal: {
+                  borderRadius: "10px",
+                  padding: "20px",
+                  fontFamily: "'Arial', sans-serif",
+                },
+              }}
               open={open && selectedProjectIndex === index}
               onClose={onCloseModal}
             >
               <div>
-                <p key={project.id}>
-                  <h2 style={{ textAlign: "center" }}>{project.title}</h2>
-                  {project.moredetails}
-                </p>
+                <h2
+                  style={{
+                    textAlign: "center",
+                    color: "#333",
+                    fontSize: "24px",
+                    marginBottom: "20px",
+                  }}
+                >
+                  {project.title}
+                </h2>
+                <div style={{ lineHeight: "1.6", color: "#555", fontSize: "16px" }}>
+                  <ul style={{ listStyle: "none", paddingLeft: "20px" }}>
+                    {project.moredetails.split("\n").map((line, idx) => {
+
+                      const isEmojiLine = /^[\p{Emoji}]/u.test(line.trim());
+
+                      return isEmojiLine ? (
+                        <li key={idx} style={{ marginBottom: "10px" }}>
+                          {line.trim()}
+                        </li>
+                      ) : (
+                        <p key={idx} style={{ marginBottom: "15px" }}>
+                          {line.trim()}
+                        </p>
+                      );
+                    })}
+                  </ul>
+                </div>
               </div>
             </Modal>
+
+
           </div>
           <div className={styles.technologies}>
             <br />
@@ -123,14 +155,21 @@ export default function Card() {
                   </a>{" "}
                 </button>
                 <button className={styles.codeButton}>
-                  <a
-                    target="_blank"
-                    style={{ textDecoration: "none", color: "white" }}
-                    href={project.url[0].codigo}
-                  >
-                    Código
-                  </a>
+                  {project.url[0].codigo ? (
+                    <a
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "white" }}
+                      href={project.url[0].codigo}
+                    >
+                      Código
+                    </a>
+                  ) : (
+                    <span style={{ color: "white", textAlign: "center", display: "block" }}>
+                      El código de este proyecto es privado, si deseas verlo no dudes en contactarme.
+                    </span>
+                  )}
                 </button>
+
               </div>
               <div>
                 {project.url[0].isVideo ? (
