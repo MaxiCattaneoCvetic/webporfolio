@@ -24,7 +24,7 @@ function Presentation() {
           <h1 className={style.titleName}>Maximiliano Cattaneo Cvetic</h1>
         </div>
         <ReactTyped
-          strings={["Desarollador Backend", "Licenciado en Administración"]}
+          strings={["backend specialist", "Fullstack developer"]}
           typeSpeed={40}
           backSpeed={40}
           loop
