@@ -1,7 +1,8 @@
 .titleProject {
 	text-align: center;
-	color: white;
-	text-decoration: underline rgba(0, 0, 255, 0.425);
+	color: #fcfcfc;
+	text-decoration: underline var(--colorPrincipal);
+	margin-block-end: 3rem;
 }
 
 .cardContainer {
@@ -15,6 +16,6 @@
 
 	.titleProject {
 		font-size: 1.5rem;
-		
+
 	}
 }

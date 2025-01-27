@@ -1,55 +1,67 @@
+.technologiesSection {
+	margin-block-start: 3rem;
+	margin-block-end: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	gap: 3rem;
+}
+
 .tecnoMainContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	width: 100%;
+
 }
 
 .tecnoContainer {
-  display: flex;
-  gap: 1rem;
-
+	display: flex;
+	gap: 1rem;
 }
 
 .technologyImage {
-  width: 300px;
-  border-radius: 2rem;
-  margin: 0.3rem;
-  width: 6rem;
+	min-width: 80px;
+	border-radius: 2rem;
+	margin: 0.3rem;
+	width: 6rem;
 }
 
 .imageCarrouselContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
 .imageCarrouselContainer a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: #fcfcfc;
 
 }
 
-.titlex{
-  color: white;
-  text-align: center;
-  text-decoration: underline rgba(0, 0, 255, 0.425) ;
+.titlex {
+	color: #fcfcfc;
+	text-align: center;
+	text-decoration: underline rgba(0, 0, 255, 0.425);
 }
 
 @media (max-width: 960px) {
-  .tecnoMainContainer div div button {
-    display: none;
-  }
+	.tecnoMainContainer div div button {
+		display: none;
+	}
 }
 
 @media (max-width: 500px) {
-  .technologyImage {
-    width: 2rem;
-  }
+	.technologyImage {
+		min-width: 50px;
+	}
 
-  .titlex{
-    font-size: 1.5rem;
-  }
+	.titlex {
+		font-size: 1.5rem;
+	}
 }

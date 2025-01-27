@@ -1,151 +1,168 @@
 .presentationContainer {
-	margin-top: 3rem;
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: row;
+	height: 100vh;
 	align-items: center;
+	gap: 7rem;
+	justify-content: center;
+	width: 100%;
+
 }
 
 
 .imgPresentationContainer {
-	display: flex;
+	z-index: 1;
 }
 
-.imgPresentationContainer img{
-	width: 33rem;
+.imgPresentationContainer img {
+	width: 30rem;
 	height: auto;
-	animation-name: float;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	margin-top: 1rem;
-	box-shadow: 0 0 35px var(--colorPrincipal);
-	border-radius: 30%;
-
 }
-.redes{
+
+.redes {
 	display: flex;
-	gap: 0.5rem;
-	justify-content: center;
+	gap: 1rem;
+	justify-content: flex-start;
 	align-items: center;
-	color: white;
-	margin-top: 0.5rem;
-}
-.redes a{
-	color: white;
-	font-size: 1.2rem;
+	color: #fcfcfc;
+	flex-direction: row;
+	width: 100%;
 }
 
-.redes a:hover{
+.redes a {
+	color: #fcfcfc;
+	font-size: 1.5rem;
+}
+
+.redes a:hover {
 	color: var(--colorPrincipal);
 }
-
 @keyframes float {
 	0% { transform: translate(0,  0px); }
 	50%  { transform: translate(0, 13%); }
 	100%   { transform: translate(0, -0px); }   
 }
-.hola{
-	color: rgb(47, 47, 218);
+
+.hola {
+	color: orange;
 	font-size: 4rem;
 	text-align: justify;
 }
-.holaSoy{
+
+.holaSoy {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
 	font-size: 2rem;
 }
-.titleName{
+
+.titleName {
 	font-size: 2rem;
-	color: white;
-	border: 2px solid orange;
+	color: #fcfcfc;
+	border: 2px solid rgb(248, 169, 22);
 	padding: 0.5rem;
 	border-radius: 1rem;
 
 }
 
-.textContainerPresentation{
+.textContainerPresentation {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 0.3rem;
-	color: white;
-	
+	align-items: start;
+	gap: 0.5rem;
+	color: #fcfcfc;
+
 }
-.typedText{
-	color: green;
+
+.typedText {
+	color: rgb(154, 208, 121);
+	;
 	font-weight: bolder;
 	font-size: 2rem;
 }
 
-.cv{
-	color: white;
+.cv {
+	color: #fcfcfc;
 	text-decoration: none;
 	cursor: pointer;
 	font-size: 1.3rem;
-}
-.cvContainer{
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 1rem;
+
 }
 
-
-
+.cvContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+}
 
 @media (max-width: 760px) {
-  .presentationContainer{
+	.presentationContainer {
+		gap: 0.5rem;
 		flex-direction: column;
-
+		margin-block-start: 4rem;
+		justify-content: start;
 	}
-	.textContainerPresentation{
+
+	.textContainerPresentation {
 		margin-top: 10%;
 		padding: 1rem;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
-	}
-	.imgPresentationContainer img {
-		width: 16rem;
+		gap: 1rem;
 	}
 
-	.hola{
-		font-size: 3rem;
+	.hola {
+		font-size: 2rem;
 	}
 
-	.holaSoy{
-		font-size: 1.5rem;
-		flex-direction: column;
-	}
-	.titleName{
+	.holaSoy {
 		font-size: 1.5rem;
 	}
 
-	.typedText{
+	.titleName {
+		font-size: 1rem;
+	}
+
+	.typedText {
 		font-size: 1.5rem;
 	}
+
+
+
 }
 
 
-@media (min-width: 760px) and (max-width: 1000px){
+@media (min-width: 760px) and (max-width: 1000px) {
+
 	.imgPresentationContainer img {
 		width: 20rem;
 	}
-	.hola{
+
+	.hola {
 		font-size: 3rem;
 	}
 
-	.holaSoy{
+	.holaSoy {
 		font-size: 1.5rem;
 
 	}
-	.titleName{
+
+	.titleName {
 		font-size: 1.5rem;
 	}
 
-	.typedText{
+	.typedText {
 		font-size: 1.5rem;
 	}
+
 }
+

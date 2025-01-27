@@ -1,6 +1,6 @@
-.footer{
+.footer {
 	display: flex;
-	color: white;
+	color: #fcfcfc;
 	justify-content: space-evenly;
 	padding: 1rem;
 	gap: 5rem;
@@ -8,58 +8,34 @@
 	margin-top: 1rem;
 }
 
-.a{
+.a {
 	text-decoration: none;
 	font-weight: bold;
-	color: green;
+	color: rgb(154, 208, 121);
 	text-decoration: underline;
 }
 
-.redes{
+.redes {
 	display: flex;
 	gap: 1rem;
 }
-.footerContainer{
+
+.footerContainer {
 	width: 100%;
 }
-.ab{
-	color: white;
+
+.ab {
+	color: #fcfcfc;
 	font-size: 1.5rem;
 }
 
-.ab:hover{
+.ab:hover {
 	color: var(--colorPrincipal);
 }
 
 @media (max-width: 500px) {
-	.footer{
-		justify-content: space-around;
-		align-items: center;
-		gap: 0.5rem;
-		width: 100%;
-		padding: 0.3rem;
+	.footer {
+		gap: 1rem;
 	}
-	.footerContainer{
-		width: 100%;
-	}
-
-	.redes{
-		display: flex;
-		gap: 0.5rem;
-	}
-
-	.ab{
-		font-size: 0.7rem;
-	}
-
-	.a{
-		font-size: 0.7rem;
-	}
-
-	.desing{
-		font-size: 0.7rem;
-		text-align: justify;
-	}
-
 
 }
