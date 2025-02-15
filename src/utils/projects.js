@@ -1,30 +1,30 @@
 let colors = ["red", "blue", "green", "yellow", "purple", "orange", "grey"];
 
 let projects = [
-	// {
-	//   id: 0,
-	//   image: [
-	//     "/publicite/publicite1.png",
-	//   ],
-	//   title: "Publicite 📚",
-	//   details: `Proximamente....`,
-	//   moredetails: `Aún esta en desarollo`,
-	//   technologies: [
-	//     { name: "Nest.js", color: colors[3] },
-	//     { name: "MongoDB", color: colors[2] },
-	//     { name: "Firebase", color: colors[2] },
-	//     { name: "Google Cloud", color: colors[2] },
-	//   ],
-	//   url: [
-	//     {
-	//       codigo: undefined,
-	//       deploy: "",
-	//       video: undefined,
-	//       isReady: false,
-	//       isVideo: false,
-	//     },
-	//   ],
-	// },
+	{
+		id: 0,
+		image: [
+			"/publicite/publicite1.png",
+		],
+		title: "Publicite 📚",
+		details: `Desarollo de una red social para la empresa publicite.`,
+		moredetails: `El proyecto aun esta en desarollo`,
+		technologies: [
+			{ name: "Nest.js", color: colors[0] },
+			{ name: "MongoDB", color: colors[2] },
+			{ name: "Firebase", color: colors[5] },
+			{ name: "Google Cloud", color: colors[2] },
+		],
+		url: [
+			{
+				codigo: undefined,
+				deploy: "https://soonpublicite.vercel.app/",
+				video: undefined,
+				isReady: true,
+				isVideo: false,
+			},
+		],
+	},
 	{
 		id: 1,
 		image: [
