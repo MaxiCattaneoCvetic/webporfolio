@@ -1,5 +1,6 @@
+import ProjectCards from '../card/ProjectCards';
 import style from './project.module.css';
-import Card from '../card/Card';
+
 function Projects() {
 	return (
 		<section>
@@ -7,7 +8,8 @@ function Projects() {
 				Mis Proyectos{' '}
 			</h2>
 			<div className={style.cardContainer}>
-				<Card></Card>
+				<ProjectCards />
+
 			</div>
 		</section>
 	);

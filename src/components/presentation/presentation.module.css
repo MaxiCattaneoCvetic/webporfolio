@@ -1,7 +1,7 @@
 .presentationContainer {
 	display: flex;
 	flex-direction: row;
-	height: 100vh;
+	height: 80vh;
 	align-items: center;
 	gap: 7rem;
 	justify-content: center;

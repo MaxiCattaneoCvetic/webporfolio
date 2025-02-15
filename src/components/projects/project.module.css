@@ -5,10 +5,7 @@
 	margin-block-end: 3rem;
 }
 
-.cardContainer {
-	display: flex;
-	gap: 1rem;
-}
+
 
 
 @media (max-width: 400px) {
