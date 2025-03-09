@@ -17,7 +17,7 @@ let projects = [
 		],
 		url: [
 			{
-				codigo: undefined,
+				codigo: "https://github.com/renatobicego/publicite",
 				deploy: "https://soonpublicite.vercel.app/",
 				video: undefined,
 				isReady: true,
