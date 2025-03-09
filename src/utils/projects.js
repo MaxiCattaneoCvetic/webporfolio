@@ -7,7 +7,7 @@ let projects = [
 			"/publicite/publicite1.png",
 		],
 		title: "Publicite 📚",
-		details: `Desarollo de una red social para la empresa publicite.`,
+		details: `Desarollo de todo el backend para un proyecto llamado publicite.`,
 		moredetails: `El proyecto aun esta en desarollo`,
 		technologies: [
 			{ name: "Nest.js", color: colors[0] },
