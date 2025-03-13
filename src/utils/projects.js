@@ -1,4 +1,25 @@
-let colors = ["red", "blue", "green", "yellow", "purple", "orange", "grey"];
+
+const colorMap = new Map([
+	["java", "#007396"],
+	["mongo", "#47A248"],
+	["redis", "#DC382D"],
+	["aws", "#FF9900"],
+	["nest", "#E0234E"],
+	["firebase", "#F5A623"],
+	["google", "#669DF6"],
+	["react", "#61DAFB"],
+	["docker", "#2496ED"],
+	["keycloak", "#D44638"],
+	["h2", "#0096D6"],
+	["sql", "#336791"],
+	["junit", "#25A162"],
+	["html", "#E34F26"],
+	["css", "#1572B6"],
+	["jest", "#99425B"],
+	["supertest", "#6E40AA"]
+
+]);
+
 
 let projects = [
 	{
@@ -7,13 +28,19 @@ let projects = [
 			"/publicite/publicite1.png",
 		],
 		title: "Publicite 📚",
-		details: `Desarollo de todo el backend para un proyecto llamado publicite.`,
-		moredetails: `El proyecto aun esta en desarollo`,
+		details: `Red social para comprar, vender y publicar necesidades (En desarollo)`,
+		moredetails: `Cree el backend de Publicité una red social en donde los usuarios tienen relaciones de amistad, grupos, revistas en donde guardan sus publicaciones junto con otros usuarios.
+		 El sistema esta protegido con Clerk Auth, el cual utilizo para la autenticación de los usuarios.
+		El backend esta construido en Nest Js bajo una arquitectura hexagonal y MongoDb para el almacenamiento.
+		Tambien cree un socket en donde los usuarios pueden enviarse notificaciones en tiempo real, el socket no esta en este codigo ya que es un servicio aparte. Es un proyecto realmente desafiante y que pone a prueba mis conocimientos, estoy feliz de poder compartirlo♥️
+		`,
 		technologies: [
-			{ name: "Nest.js", color: colors[0] },
-			{ name: "MongoDB", color: colors[2] },
-			{ name: "Firebase", color: colors[5] },
-			{ name: "Google Cloud", color: colors[2] },
+			{ name: "Nest.js", color: colorMap.get("nest") },
+			{ name: "MongoDB", color: colorMap.get("mongo") },
+			{ name: "Firebase", color: colorMap.get("firebase") },
+			{ name: "Google Cloud", color: colorMap.get("google") },
+			{ name: "Jest", color: colorMap.get("jest") },
+			{ name: "Super Test", color: colorMap.get("supertest") },
 		],
 		url: [
 			{
@@ -28,22 +55,22 @@ let projects = [
 	{
 		id: 1,
 		image: [
-			"/publicite/publicite1.png",
+			"/urlShorter/urlshorter_1.jpg",
+			"/urlShorter/urlshorter_2.jpg",
 		],
 		title: "Url Shortener 🛜",
 		details: `Esta aplicación convierte una URL larga proporcionada por el usuario y la convierte en una URL corta accesible.`,
 		moredetails: `La estructura del backend esta hecha con Java springboot y para el almacenamiento de los datos y la utilización del cache Redis.
-			Para hacer el deploy se utilizo AWS. un bucket s3 para el almacenamiento del front y una t2.micro para el almacenamiento del backend. (Ec2).`,
+			Para hacer el deploy se utilizo AWS. un bucket s3 para el almacenamiento del front y una t2.micro para el almacenamiento del backend. (Ec2). Proyecto para entrevistas en Mercadolibre`,
 		technologies: [
-			{ name: "Nest.js", color: colors[0] },
-			{ name: "MongoDB", color: colors[2] },
-			{ name: "Firebase", color: colors[5] },
-			{ name: "Google Cloud", color: colors[2] },
+			{ name: "Java - Springboot", color: colorMap.get("java") },
+			{ name: "Redis", color: colorMap.get("redis") },
+			{ name: "AWS", color: colorMap.get("aws") },
 		],
 		url: [
 			{
-				codigo: undefined,
-				deploy: "https://soonpublicite.vercel.app/",
+				codigo: "https://github.com/MaxiCattaneoCvetic/UrlShorterMeliBackend",
+				deploy: undefined,
 				video: undefined,
 				isReady: true,
 				isVideo: false,
@@ -67,8 +94,8 @@ let projects = [
       🗒️ Gestión de pacientes: Fichas informativas con historial clínico detallado.
       ✔ Registro de anotaciones: Posibilidad de incluir notas específicas por turno.`,
 		technologies: [
-			{ name: "Node.js", color: colors[3] },
-			{ name: "MongoDB", color: colors[2] },
+			{ name: "Node.js", color: colorMap.get("nest") },
+			{ name: "MongoDB", color: colorMap.get("mongo") },
 		],
 		url: [
 			{
@@ -96,12 +123,12 @@ let projects = [
       🗂️ Historial personalizado: Cada transacción genera un registro que puede descargarse en formato PDF.
       🚀 Microservicios escalables: Diseño modular y flexible para manejar cargas altas.`,
 		technologies: [
-			{ name: "Java", color: colors[5] },
-			{ name: "React.js", color: colors[3] },
-			{ name: "MongoDB", color: colors[2] },
-			{ name: "AWS", color: colors[5] },
-			{ name: "Keycloak", color: colors[5] },
-			{ name: "Docker", color: colors[3] },
+			{ name: "Java", color: colorMap.get("java") },
+			{ name: "React.js", color: colorMap.get("react") },
+			{ name: "MongoDB", color: colorMap.get("mongo") },
+			{ name: "AWS", color: colorMap.get("aws") },
+			{ name: "Keycloak", color: colorMap.get("keycloak") },
+			{ name: "Docker", color: colorMap.get("docker") },
 		],
 		url: [
 			{
@@ -129,10 +156,10 @@ let projects = [
       👥 Roles de administrador y cliente: Acceso y permisos personalizados.
       🔄 Actualizaciones en tiempo real: Experiencia fluida para los usuarios.`,
 		technologies: [
-			{ name: "Java", color: colors[5] },
-			{ name: "React.js", color: colors[3] },
-			{ name: "MySQL", color: colors[1] },
-			{ name: "AWS", color: colors[5] },
+			{ name: "Java", color: colorMap.get("java") },
+			{ name: "React.js", color: colorMap.get("react") },
+			{ name: "MySQL", color: colorMap.get("sql") },
+			{ name: "AWS", color: colorMap.get("aws") },
 		],
 		url: [
 			{
@@ -154,12 +181,12 @@ let projects = [
       📈 Pruebas automatizadas: Uso de JUnit y MockMvc para validación del sistema.
       📋 Loggers: Integración con Log4j para monitoreo.`,
 		technologies: [
-			{ name: "Java", color: colors[5] },
-			{ name: "React.js", color: colors[3] },
-			{ name: "H2", color: colors[6] },
-			{ name: "JUnit", color: colors[5] },
-			{ name: "HTML", color: colors[0] },
-			{ name: "CSS", color: colors[1] },
+			{ name: "Java", color: colorMap.get("java") },
+			{ name: "React.js", color: colorMap.get("react") },
+			{ name: "H2", color: colorMap.get("h2") },
+			{ name: "JUnit", color: colorMap.get("junit") },
+			{ name: "HTML", color: colorMap.get("html") },
+			{ name: "CSS", color: colorMap.get("css") },
 		],
 		url: [
 			{

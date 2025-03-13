@@ -71,16 +71,23 @@ export default function TechCard({ images, title, details, moreDetails, technolo
 
       <div className={styles.technologies}>
         {technologies.map((tech, index) => (
-          <span key={index} className={styles.tech}>
-            {tech}
+          <span
+            key={index}
+            className={styles.tech}
+            style={{
+              "--hoverColor": tech.color, 
+            }}
+          >
+            {tech.name}
+
           </span>
         ))}
       </div>
-      <div className={styles.links}>
+      <div className={styles.links} >
         {codeUrl ? (
           <a href={codeUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
             <span className={styles.linkIcon}>&#60;/&#62;</span>
-            <span>Code</span>
+            <span >Code</span>
           </a>) : (<h5 className={styles.repoPrivate}>El repo es privado, contactame!</h5>
         )}
         {deployUrl ? (
@@ -97,7 +104,7 @@ export default function TechCard({ images, title, details, moreDetails, technolo
         )}
       </div>
 
-      {/* Modal */}
+
       <Modal
         center
         open={isModalOpen}
