@@ -28,6 +28,31 @@ let projects = [
 	{
 		id: 1,
 		image: [
+			"/publicite/publicite1.png",
+		],
+		title: "Url Shortener 🛜",
+		details: `Esta aplicación convierte una URL larga proporcionada por el usuario y la convierte en una URL corta accesible.`,
+		moredetails: `La estructura del backend esta hecha con Java springboot y para el almacenamiento de los datos y la utilización del cache Redis.
+			Para hacer el deploy se utilizo AWS. un bucket s3 para el almacenamiento del front y una t2.micro para el almacenamiento del backend. (Ec2).`,
+		technologies: [
+			{ name: "Nest.js", color: colors[0] },
+			{ name: "MongoDB", color: colors[2] },
+			{ name: "Firebase", color: colors[5] },
+			{ name: "Google Cloud", color: colors[2] },
+		],
+		url: [
+			{
+				codigo: undefined,
+				deploy: "https://soonpublicite.vercel.app/",
+				video: undefined,
+				isReady: true,
+				isVideo: false,
+			},
+		],
+	},
+	{
+		id: 2,
+		image: [
 			"/mahatu/mahatu3.png",
 			"/mahatu/mahatu4.png",
 			"/mahatu/mahatu1.png",
@@ -56,7 +81,7 @@ let projects = [
 		],
 	},
 	{
-		id: 2,
+		id: 3,
 		image: [
 			"/safewallet/safewallet1.jpg",
 			"/safewallet/safewallet2.jpg",
@@ -89,7 +114,7 @@ let projects = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		image: [
 			"/wonder/wonder1.webp",
 			"/wonder/wonder2.webp",
@@ -119,7 +144,7 @@ let projects = [
 		],
 	},
 	{
-		id: 4,
+		id: 5,
 		image: ["/odontomax/odontoMax.gif"],
 		title: "Odonto Max 🦷",
 		details: `Odonto Max, mi proyecto final de Backend I, diseñado para cubrir las necesidades de una clínica odontológica.`,
