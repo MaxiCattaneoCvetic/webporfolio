@@ -29,8 +29,9 @@ let projects = [
 		],
 		title: "Publicite 📚",
 		details: `Red social para comprar, vender y publicar necesidades (En desarollo)`,
-		moredetails: `Cree el backend de Publicité una red social en donde los usuarios tienen relaciones de amistad, grupos, revistas en donde guardan sus publicaciones junto con otros usuarios.
-		 El sistema esta protegido con Clerk Auth, el cual utilizo para la autenticación de los usuarios.
+		moredetails: `Cree el backend de Publicité una red social en donde los usuarios tienen relaciones de amistad, grupos, revistas en donde guardan sus publicaciones junto con otros usuarios. 
+		Cada usuario puede disponier de un tipo de suscripción y un plan de pago el cual le da determinados beneficios. Para este integración implemente un sistema de pagos con Mercado Pago. 
+		El sistema esta protegido con Clerk Auth, el cual utilizo para la autenticación de los usuarios.
 		El backend esta construido en Nest Js bajo una arquitectura hexagonal y MongoDb para el almacenamiento.
 		Tambien cree un socket en donde los usuarios pueden enviarse notificaciones en tiempo real, el socket no esta en este codigo ya que es un servicio aparte. Es un proyecto realmente desafiante y que pone a prueba mis conocimientos, estoy feliz de poder compartirlo♥️
 		`,
