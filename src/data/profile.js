@@ -10,8 +10,7 @@ const profile = {
 		linkedin: "https://www.linkedin.com/in/mcvetic/",
 		dutsiland: "https://dutsiland.com",
 	},
-	heroIntro:
-		"Administración + código: construyo software que entiende el negocio.",
+	heroIntro: "",
 	lede:
 		"Primero fue la Administración; después, el código. Hoy combino los dos mundos para construir software de calidad.",
 	bio: [

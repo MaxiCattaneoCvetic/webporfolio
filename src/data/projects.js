@@ -166,7 +166,7 @@ const projects = [
 		categoria: "Marketplace con IA",
 		stackCorto: "NestJS · GraphQL · MongoDB",
 		rol: "Backend Developer",
-		contexto: "Proyecto colaborativo, actualmente en desarrollo",
+		contexto: "Proyecto colaborativo, en producción",
 		image: [
 			"/publicite/publicite-1.png",
 			"/publicite/publicite-2.png",
