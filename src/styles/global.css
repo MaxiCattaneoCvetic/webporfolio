@@ -258,12 +258,18 @@ button {
 /* ---------- hero ---------- */
 
 .hero {
-	min-height: 100svh;
+	min-height: 90svh;
 	padding-block: clamp(5.5rem, 12vh, 8rem) var(--space-8);
 	flex-direction: column;
 	justify-content: flex-end;
 	display: flex;
 	position: relative;
+}
+
+@media (width <= 720px) {
+	.hero {
+		min-height: 70svh;
+	}
 }
 
 .hero-field {
