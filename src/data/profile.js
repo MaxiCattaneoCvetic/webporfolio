@@ -121,7 +121,7 @@ const profile = {
 			estado: "Finalizado",
 		},
 	],
-	extra: ["Inglés — Intermedio"],
+	extra: [],
 };
 
 export default profile;

@@ -23,6 +23,10 @@ const colorMap = new Map([
 	["mcp", "#D97757"],
 	["langchain", "#65C89B"],
 	["whatsapp", "#25D366"],
+	["graphql", "#E10098"],
+	["openai", "#74AA9C"],
+	["clerk", "#6C47FF"],
+	["mercadopago", "#00B1EA"],
 ]);
 
 const projects = [
@@ -33,7 +37,7 @@ const projects = [
 		emoji: "🏥",
 		categoria: "SaaS · Clínicas estéticas",
 		stackCorto: "Next.js · PostgreSQL · IA",
-		rol: "Product & Technology Lead",
+		rol: "Creador del proyecto",
 		contexto: "Plataforma SaaS multi-tenant para clínicas y centros de estética",
 		image: [
 			"/clinicasup/clinicasup-1.png",
@@ -47,7 +51,7 @@ const projects = [
 			{ src: "/clinicasup/demo-celular.mp4", formato: "vertical" },
 		],
 		details: `Plataforma de gestión para clínicas estéticas: agenda, pacientes, consentimientos, finanzas y un agente de IA que atiende las conversaciones de la clínica.`,
-		moredetails: `Lideré el desarrollo end-to-end de ClinicasUp, una plataforma SaaS multi-tenant para operar clínicas estéticas: cada clínica administra sus sedes, roles y datos de forma aislada, con toda la operación en un solo lugar.
+		moredetails: `Creé ClinicasUp de punta a punta: desde las reuniones con los clientes y la definición de los requerimientos hasta el desarrollo completo. Es una plataforma SaaS multi-tenant para operar clínicas estéticas: cada clínica administra sus sedes, roles y datos de forma aislada, con toda la operación en un solo lugar.
 		📅 Agenda y turnos: el pulso de la jornada en un tablero con confirmaciones, próximos turnos y novedades en tiempo real.
 		🧑‍⚕️ Pacientes y consentimientos: fichas de pacientes con historial y consentimientos digitales.
 		🤖 Agente de IA: atiende WhatsApp e Instagram, responde precios y disponibilidad, agenda turnos solo y envía recordatorios; el equipo puede tomar control de la conversación cuando quiere. Construido con LangGraph, multi-LLM (Anthropic + OpenAI), conectado al CRM vía MCP.
@@ -80,7 +84,7 @@ const projects = [
 		emoji: "🤖",
 		categoria: "SaaS · CRM con IA",
 		stackCorto: "Next.js · LangChain · WhatsApp",
-		rol: "Product & Technology Lead",
+		rol: "Creador del proyecto",
 		contexto: "Producto SaaS multi-tenant con asistente de IA por WhatsApp",
 		image: [
 			"/personal-assistant/personal-assistant-1.png",
@@ -89,7 +93,7 @@ const projects = [
 			"/personal-assistant/personal-assistant-4.png",
 		],
 		details: `CRM multi-tenant con un asistente de IA por WhatsApp: clientes, proyectos, calendario, archivos y correo gestionados desde un solo lugar — o conversando con tu asistente.`,
-		moredetails: `Personal Assistant es un CRM multi-tenant pensado para que cada profesional gestione su negocio desde un solo lugar, con un diferencial: un asistente de IA que atiende por WhatsApp y opera la plataforma por vos.
+		moredetails: `Creé Personal Assistant, un CRM multi-tenant pensado para que cada profesional gestione su negocio desde un solo lugar, con un diferencial: un asistente de IA que atiende por WhatsApp y opera la plataforma por vos.
 		🤖 Asistente por WhatsApp: consultás clientes, creás tareas o agendás reuniones conversando, sin abrir la app.
 		👥 Contactos y clientes: la cartera organizada, con seguimiento y etiquetas por rubro.
 		📋 Temas en Kanban: proyectos y tareas con prioridades y vencimientos.
@@ -119,19 +123,18 @@ const projects = [
 		slug: "isabella-ferdinand",
 		nombre: "Isabella & Ferdinand",
 		emoji: "🎓",
-		categoria: "Cliente real · Educación",
+		categoria: "Educación",
 		stackCorto: "React · NestJS · PostgreSQL",
-		rol: "Product & Technology Lead",
+		rol: "Creador del proyecto",
 		contexto: "Plataforma de gestión para una academia de español en Washington DC",
 		image: [
 			"/isabella-ferdinand/isabella-ferdinand-1.png",
 			"/isabella-ferdinand/isabella-ferdinand-2.png",
 			"/isabella-ferdinand/isabella-ferdinand-3.png",
-			"/isabella-ferdinand/isabella-ferdinand-4.png",
 			"/isabella-ferdinand/isabella-ferdinand-5.png",
 		],
 		details: `Plataforma de gestión educativa para Isabella & Ferdinand, una academia de español en Washington DC: calendario, clases, alumnos, docentes y finanzas en un solo sistema.`,
-		moredetails: `Con mi equipo en My Upgrade desarrollamos la plataforma que centraliza la operación diaria de la academia, en una interfaz bilingüe (inglés/español).
+		moredetails: `Creé la plataforma que centraliza la operación diaria de la academia — desde las reuniones con el cliente y el relevamiento de necesidades hasta el desarrollo completo — con una interfaz bilingüe (inglés/español).
 		📅 Calendario estilo Outlook: vistas de semana, día y mes, con filtros por docente, sede y programa.
 		🏫 Clases y tomas de clase: programación de cursos y summer camps con su registro de clases.
 		🧑‍🎓 Gestión de alumnos y docentes: fichas, autorizaciones y avisos generales.
@@ -160,20 +163,34 @@ const projects = [
 		slug: "publicite",
 		nombre: "Publicité",
 		emoji: "📚",
-		categoria: "Red social · En desarrollo",
-		stackCorto: "NestJS · MongoDB",
+		categoria: "Marketplace con IA",
+		stackCorto: "NestJS · GraphQL · MongoDB",
 		rol: "Backend Developer",
 		contexto: "Proyecto colaborativo, actualmente en desarrollo",
-		image: ["/publicite/publicite1.png"],
-		details: `Red social para comprar, vender y publicar necesidades (En desarollo)`,
+		image: [
+			"/publicite/publicite-1.png",
+			"/publicite/publicite-2.png",
+			"/publicite/publicite-3.png",
+			"/publicite/publicite-4.png",
+		],
+		details: `Marketplace y red social para publicar, conectar y vender: anuncios geolocalizados, comunidad y un asistente de IA que valúa y encuentra oportunidades.`,
 		moredetails: `Cree el backend de Publicité una red social en donde los usuarios tienen relaciones de amistad, grupos, revistas en donde guardan sus publicaciones junto con otros usuarios.
 		Cada usuario puede disponier de un tipo de suscripción y un plan de pago el cual le da determinados beneficios. Para este integración implemente un sistema de pagos con Mercado Pago.
 		El sistema esta protegido con Clerk Auth, el cual utilizo para la autenticación de los usuarios.
 		El backend esta construido en Nest Js bajo una arquitectura hexagonal y MongoDb para el almacenamiento.
-		Tambien cree un socket en donde los usuarios pueden enviarse notificaciones en tiempo real, el socket no esta en este codigo ya que es un servicio aparte. Es un proyecto realmente desafiante y que pone a prueba mis conocimientos, estoy feliz de poder compartirlo♥️`,
+		Tambien cree un socket en donde los usuarios pueden enviarse notificaciones en tiempo real, el socket no esta en este codigo ya que es un servicio aparte.
+		📣 Anuncios geolocalizados: bienes, servicios y necesidades, con búsqueda por ubicación y filtros.
+		🤖 Cubito, el asistente de IA: valúa publicaciones con informes y comparables reales, hace match entre necesidades y anuncios, y ayuda a crear un anuncio conversando.
+		💳 Suscripciones y pagos: planes con beneficios e integración con Mercado Pago.
+		🔔 Notificaciones en tiempo real y sorteos para la comunidad.`,
 		technologies: [
 			{ name: "Nest.js", color: colorMap.get("nest") },
+			{ name: "GraphQL", color: colorMap.get("graphql") },
 			{ name: "MongoDB", color: colorMap.get("mongo") },
+			{ name: "Next.js", color: colorMap.get("next") },
+			{ name: "OpenAI Agents SDK", color: colorMap.get("openai") },
+			{ name: "Clerk Auth", color: colorMap.get("clerk") },
+			{ name: "Mercado Pago", color: colorMap.get("mercadopago") },
 			{ name: "Firebase", color: colorMap.get("firebase") },
 			{ name: "Google Cloud", color: colorMap.get("google") },
 			{ name: "Jest", color: colorMap.get("jest") },
@@ -222,7 +239,7 @@ const projects = [
 		slug: "mahatu-consultorios",
 		nombre: "Mahatu Consultorios",
 		emoji: "🦷",
-		categoria: "Cliente real · Salud",
+		categoria: "Salud",
 		stackCorto: "Node.js · MongoDB",
 		rol: "Backend Developer",
 		contexto: "Sistema en producción para una clínica odontológica",
