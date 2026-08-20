@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import projects from '../../data/projects';
 import NotFound from '../NotFound';
 import DemoVideo from '../../components/DemoVideo';
+import HoverParticles from '../../components/HoverParticles';
 import { initReveals } from '../../lib/reveal';
 
 const emojiInicial = /^\p{Extended_Pictographic}/u;
@@ -194,6 +195,10 @@ function Proyecto() {
 				<Link className='cs-next-link' to={`/proyectos/${siguiente.slug}`}>
 					<span className='cs-next-title'>{siguiente.nombre} →</span>
 				</Link>
+				<HoverParticles
+					rowSelector='.cs-next-link'
+					titleSelector='.cs-next-title'
+				/>
 			</nav>
 		</article>
 	);

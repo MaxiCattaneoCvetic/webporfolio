@@ -382,6 +382,16 @@ button {
 
 .work {
 	padding-block: var(--space-section);
+	position: relative;
+}
+
+.hover-canvas {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 2;
 }
 
 .section-head {
@@ -1137,6 +1147,7 @@ button {
 .cs-next {
 	padding-block: var(--space-8) var(--space-16);
 	border-top: 1px solid var(--line);
+	position: relative;
 }
 
 .cs-next-link {

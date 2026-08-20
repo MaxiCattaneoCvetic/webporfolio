@@ -9,17 +9,17 @@ function Hero() {
 			<p className='hero-eyebrow label'>
 				{profile.rol} · {profile.ubicacion}
 			</p>
-			<h1 className='hero-headline' aria-label='Construyo sistemas que escalan.'>
+			<h1 className='hero-headline' aria-label='Transformo ideas en proyectos.'>
 				<span aria-hidden='true'>
 					<span className='hero-line'>
-						<span className='hero-line-inner'>Construyo</span>
+						<span className='hero-line-inner'>Transformo</span>
 					</span>
 					<span className='hero-line'>
-						<span className='hero-line-inner'>sistemas que</span>
+						<span className='hero-line-inner'>ideas en</span>
 					</span>
 					<span className='hero-line'>
 						<span className='hero-line-inner'>
-							<em>escalan.</em>
+							<em>proyectos.</em>
 						</span>
 					</span>
 				</span>

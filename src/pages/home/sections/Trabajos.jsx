@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import projects from '../../../data/projects';
+import HoverParticles from '../../../components/HoverParticles';
 
 function Trabajos() {
 	return (
@@ -32,6 +33,7 @@ function Trabajos() {
 					</li>
 				))}
 			</ul>
+			<HoverParticles />
 		</section>
 	);
 }
